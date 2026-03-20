@@ -1,0 +1,104 @@
+<!-- Aufgabe: Hogwarts braucht deine Hilfe!
+
+Story: Die Bibliothek von Hogwarts ist im Chaos!
+Madam Pince bittet dich, eine magische Infoseite für neue Erstklässler zu bauen,
+damit sie sich in der Zaubererwelt zurechtfinden.
+
+Deine Aufgabe: Erstelle eine HTML-Webseite über Hogwarts (oder dein Lieblingshaus, Zauber, Charaktere).
+
+Muss enthalten:
+
+Basic HTML: - <!DOCTYPE html>
+            - <html>, <head>, <title>, <body>
+
+Struktur:   - <header>: Titel + kurzer Willkommensgruß
+            - <main>: Inhalt
+            - <footer>: Signatur der magischen Webseite
+            - Zusätzlich: mindestens 2 von diesen <section>, <article>, <nav>
+
+Inhalt:     - <h1>: Name deiner Seite
+            - Mindestens 2 Unterüberschriften
+            - Mindestens 3 Absätze Text
+
+Listen: - <ul>: z. B. Häuser, Zaubersprüche oder magische Gegenstände
+        - <ol>: „So wirst du ein Hogwarts-Schüler in 5 Schritten“
+
+Links:  - Mindestens 3 Links
+        - 1 Link öffnet sich in neuem Tab
+        - 1 Sprunglink innerhalb der Seite
+
+Bonus:  - Navigationsmenü zu „Häuser“, „Zauber“, „Regeln“
+        - Footer-Text: „Diese Seite ist durch alte Magie geschützt.“ -->
+
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Willkommen in Hogwarts ! Wegweiser für Erstklässler</title>
+    </head>
+    <body>
+        <header>
+            <h1>Die Eingangshalle von Hogwarts</h1>
+            <p>Willkommen, junger Zauberer! Dieser magische Wegweiser hilft dir, deinen Weg durch das Schloss zu finden.</p>
+        
+            <nav id="top">
+                <ul>
+                    <li><a href="#haeuser">Die Häuser</a></li>
+                    <li><a href="#zauber">Wichtige Zaubersprüche</a></li>
+                    <li><a href="#regeln">Schulregeln</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="anmeldung">
+                <h2>Dein Weg nach Hogwarts</h2>
+                <p>Es ist ein besonderer Moment, wenn die Eule mit dem Brief eintrifft. Die Ausbildung beginnt offiziell am 1. September.</p>
+                
+                <article>
+                    <h3>So wirst du ein Hogwarts-Schüler in 5 Schritten</h3>
+                    <ol>
+                        <li>Warte auf deinen Brief per Eulenpost.</li>
+                        <li>Besorge deine Ausrüstung in der Winkelgasse (Stab nicht vergessen!).</li>
+                        <li>Begib dich zum Bahnhof King's Cross.</li>
+                        <li>Suche das Gleis 9 ¾ und geh durch die Wand.</li>
+                        <li>Setze den Sprechenden Hut auf und lass dich einem Haus zuweisen.</li>
+                    </ol>
+                </article>
+            </section>
+
+            <section id="haeuser">
+                <h2>Die vier Häuser</h2>
+                <p>Jedes Haus hat seine eigene Geschichte und stolze Traditionen. Der Sprechende Hut erkennt, wo du am besten aufgehoben bist.</p>
+                <ul>
+                    <li><strong>Gryffindor:</strong> Tapferkeit und Mut</li>
+                    <li><strong>Hufflepuff:</strong> Treue und Fleiß</li>
+                    <li><strong>Ravenclaw:</strong> Klugheit und Weisheit</li>
+                    <li><strong>Slytherin:</strong> Ehrgeiz und List</li>
+                </ul>
+            </section>
+
+            <section id="wissen">
+                <h2 id="zauber">Nützliches Wissen & Zaubersprüche</h2>
+                <p>Der Unterricht kann fordernd sein, aber mit Fleiß wirst du bald die ersten Sprüche beherrschen.</p>
+                <p>Solltest du dich verlaufen, kannst du jederzeit den <a href="#top">Sprung zurück zum Menü</a> nutzen.</p>
+            </section>
+
+            <section id="links">
+                <h2>Magische Ressourcen</h2>
+                <p>Hier findest du weitere Informationen aus der Welt der Zauberei:</p>
+                <ul>
+                    <li>Besuche das offizielle <a href="https://www.wizardingworld.com" target="_blank" rel="noopener noreferrer">Wizarding World Portal</a> (öffnet in neuem Tab).</li>
+                    <li>Lies mehr über <a href="https://harrypotter.fandom.com" target="_blank" rel="noopener noreferrer">die Geschichte von Hogwarts</a>.</li>
+                    <li>Schau dir die <a href="https://www.giga.de/entertainment/harry-potter-reihenfolge-der-filme-und-buecher-deutsch-englisch--01J5QPA24A5E9FCZVR9T2ZF673" target="_blank" rel="noopener noreferrer">Filme und Bücher</a> an.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Andreas Burry, erstellt mit Hilfe von einem fähigen Zauber-Lehrling.</p>
+            <p><em>Diese Seite ist durch alte Magie geschützt.</em></p>
+        </footer> 
+    </body>
+</html>
