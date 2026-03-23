@@ -1,0 +1,102 @@
+<!-- Sherlock Holmes – „Fallakte-System“
+
+Aufgabe: Du bist Assistent von Sherlock Holmes und verwaltest Fälle.
+
+Anforderungen:  - 1. Kontaktformular (Fall aufnehmen)
+                - Name des Klienten
+                - Tatort
+                - Art des Falls (Dropdown: Diebstahl, Mord, Vermisst)
+                - Beschreibung (Textarea)
+                - Dringlichkeit (Radio: niedrig / mittel / hoch)
+                - Button: „Fall speichern“
+
+2. Tabelle (Fallübersicht):     - Fallnummer
+                                - Klient
+                                - Status (offen / in Bearbeitung / gelöst)
+                                - Priorität
+
+Bonus: Nutze ein „Vintage“-Design (z. B. Serif-Schrift, beige Hintergrund) -->
+
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sherlock Holmes - Fallakte-System</title>
+        <link rel="stylesheet" href="styless.css">
+    </head>
+
+    <body>
+        <main class="container">
+            <header>
+                <h1>An der Donauhalle 2a - Fallaufnahme DS2026_0815</h1>
+            </header>
+
+            <section id="fall-eintrag">
+                <h2>Neuen Fall registrieren</h2>
+                <form id="caseForm">
+                    <section>
+                        <label for="klientName">Name des Klienten</label>
+                        <input type="text" id="klientName" placeholder="z.B. Dr. Watson" required>
+                    </section>
+                    <section>
+                        <label for="ort">Tatort</label>
+                        <input type="text" id="ort" placeholder="Wo auch immer">
+                    </section>
+                    <section>
+                    <label for="fallart">Art des Falls</label>
+                        <select id="fallart">
+                            <option value="Diebstahl">Diebstahl</option>
+                            <option value="Mord">Mord</option>
+                            <option value="Vermisst">Vermisst</option>
+                        </select>
+                    </section>
+                    <section>
+                        <label for="beschreibung">Fallbeschreibung</label>
+                        <textarea id="beschreibung" rows="4" placeholder="Einzelheiten zur Angelegenheit..."></textarea>
+                    </section>
+                    <fieldset class="wichtigkeit">
+                        <strong>Dringlichkeit</strong>
+                        <section>
+                            <label><input type="radio" name="wichtigkeit" value="Niedrig" checked> Niedrig</label>
+                            <label><input type="radio" name="wichtigkeit" value="Mittel"> Mittel</label>
+                            <label><input type="radio" name="wichtigkeit" value="Hoch"> Hoch</label>
+                        </section>
+                    </fieldset>
+                    <button type="submit">Fall in die Akten aufnehmen</button>
+                    </form>
+            </section>
+
+            <hr>
+            <hr>
+
+            <article id="fall-archiv">
+                <h2>Aktuelle Fallübersicht</h2>
+                <table border="6" id="fallTabelle">
+                    <thead>
+                        <tr>
+                            <th>Fall #</th>
+                            <th>Klient</th>
+                            <th>Status</th>
+                            <th>Priorität</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Sherlock_Holmes</td>
+                            <td class="status-offen">In Bearbeitung</td>
+                            <td class="prioritaet">Hoch</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Dr John Watson</td>
+                            <td class="status-offen">In Bearbeitung</td>
+                            <td class="prioritaet">Niedrig</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </main>
+    </body>
+</html>
